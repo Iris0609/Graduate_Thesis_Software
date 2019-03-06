@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>398</width>
+    <height>106</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>398</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionTable"/>
+   </widget>
+   <widget class="QMenu" name="menuTime">
+    <property name="title">
+     <string>Time</string>
+    </property>
+    <addaction name="actionTrend_Graph"/>
+   </widget>
+   <widget class="QMenu" name="menuSpace">
+    <property name="title">
+     <string>Space</string>
+    </property>
+    <widget class="QMenu" name="menuMoran_s_I">
+     <property name="title">
+      <string>Moran's I</string>
+     </property>
+     <addaction name="actionGlobal"/>
+     <addaction name="actionLocal"/>
+    </widget>
+    <addaction name="menuMoran_s_I"/>
+   </widget>
+   <widget class="QMenu" name="menuTime_Space">
+    <property name="title">
+     <string>Time-Space</string>
+    </property>
+    <addaction name="actionDynamic_Map"/>
+    <addaction name="actionSTACF"/>
+    <addaction name="actionSTPACF"/>
+    <addaction name="actionSTARMA"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTime"/>
+   <addaction name="menuSpace"/>
+   <addaction name="menuTime_Space"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionTable">
+   <property name="text">
+    <string>Table</string>
+   </property>
+  </action>
+  <action name="actionTrend_Graph">
+   <property name="text">
+    <string>Trend Graph</string>
+   </property>
+  </action>
+  <action name="actionGlobal">
+   <property name="text">
+    <string>Global</string>
+   </property>
+  </action>
+  <action name="actionLocal">
+   <property name="text">
+    <string>Local</string>
+   </property>
+  </action>
+  <action name="actionStatic_Map">
+   <property name="text">
+    <string>Static Map</string>
+   </property>
+  </action>
+  <action name="actionDynamic_Map">
+   <property name="text">
+    <string>Dynamic Map</string>
+   </property>
+  </action>
+  <action name="actionSTACF">
+   <property name="text">
+    <string>STACF</string>
+   </property>
+  </action>
+  <action name="actionSTPACF">
+   <property name="text">
+    <string>STPACF</string>
+   </property>
+  </action>
+  <action name="actionSTARMA">
+   <property name="text">
+    <string>STARMA</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>on_click()</slot>
+ </slots>
+</ui>
